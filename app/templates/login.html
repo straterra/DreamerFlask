@@ -1,0 +1,36 @@
+{% block body %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>DreamerFlask - Login</title>
+  <meta name="description" content="Login page">
+  <meta name="author" content="Thomas York">
+
+  <link rel="stylesheet" href="static/login.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="static/login.js"></script>
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form" action="/login" method="POST">
+        <input type="username" name="username" placeholder="username"/>
+        <input type="password" name="password" placeholder="password"/>
+        <button type="submit">login</button>
+      </form>
+  </div>
+</div>
+</body>
+</html>
+{% endif %}
+{% endblock %}

@@ -15,6 +15,7 @@ from app import *
 engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'], echo=True)
 Base = declarative_base()
 
+
 ########################################################################
 
 

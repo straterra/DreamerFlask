@@ -18,5 +18,5 @@ db = SQLAlchemy(app)
 from app.routes import *
 
 # Flask Setup
-if __name__== "__main__":
+if __name__ == "__main__":
     app.run()

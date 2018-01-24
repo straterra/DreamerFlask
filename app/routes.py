@@ -12,6 +12,7 @@ from flask_hashing import Hashing
 from app.tabledef import *
 import os
 
+
 # Routes
 @app.route('/')
 def home():
@@ -42,6 +43,7 @@ def login():
             return redirect('/login')
     else:
         return render_template('login.html')
+
 
 @app.route("/logout")
 def logout():

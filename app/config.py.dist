@@ -12,5 +12,6 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 # Flask configuration
 class Config(object):
     SECRET_KEY = 'please-change-me'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, '..', 'db' , 'auth.sqlite3')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, '..', 'db',
+                                                                                            'auth.sqlite3')
     SQLALCHEMY_TRACK_MODIFICATIONS = False

@@ -30,7 +30,6 @@ session = Session()
 user = User(user, h)
 session.add(user)
 
-
 # commit the record the database
 session.commit()
 

@@ -6,6 +6,7 @@
 
 import socket
 import re
+import time
 
 TCP_IP = '192.168.10.23'
 TCP_PORT = 8899
@@ -78,7 +79,11 @@ def close_dreamer_connection(socket):
 
 
 s = start_dreamer_connection(TCP_IP, TCP_PORT)
-percentage = get_dreamer_progress(s)
+percentage = 0
+while percentage < 100:
+    percentage = get_dreamer_progress(s)
+    print percentage
+    time.sleep(1)
 
 close_dreamer_connection(s)
 

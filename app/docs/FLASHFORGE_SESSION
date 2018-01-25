@@ -1,0 +1,122 @@
+~M601 S1 - Control command
+~M115 - Machine information, firmware
+~M114 - X/Y/Z information
+~M27 - Print information
+~M119 - Machine status, movement mode, endstop information
+~M105 - Temperatures (Extruders, bed)
+
+
+~M601 S1
+CMD M601 Received.
+Control Success.
+ok
+~M115
+CMD M115 Received.
+Machine Type: Flashforge Dreamer
+Machine Name: My Dreamer
+Firmware: V2.5 20171222
+SN: 3a0041-34365112-37323537
+X: 230  Y: 150  Z: 140
+Tool Count: 2
+ok
+~M650
+CMD M650 Received.
+X: 34 Y: 0
+ok
+~M115
+CMD M115 Received.
+Machine Type: Flashforge Dreamer
+Machine Name: My Dreamer
+Firmware: V2.5 20171222
+SN: 3a0041-34365112-37323537
+X: 230  Y: 150  Z: 140
+Tool Count: 2
+ok
+~M114
+CMD M114 Received.
+X:-55.66 Y:34.57 Z:3.7 A:385.208 B:0
+ok
+~M27
+CMD M27 Received.
+SD printing byte 1908042/8787507
+ok
+~M119
+CMD M119 Received.
+Endstop: X-max: 0 Y-max: 0 Z-min: 0
+MachineStatus: BUILDING_FROM_SD
+MoveMode: MOVING
+ok
+~M105
+CMD M105 Received.
+T0:208 /210 T1:37 /0 B:51 /50
+ok
+~M119
+CMD M119 Received.
+Endstop: X-max: 0 Y-max: 0 Z-min: 0
+MachineStatus: BUILDING_FROM_SD
+MoveMode: MOVING
+ok
+~M105
+CMD M105 Received.
+T0:208 /210 T1:37 /0 B:51 /50
+ok
+~M27
+CMD M27 Received.
+SD printing byte 1909038/8787507
+ok
+~M119
+CMD M119 Received.
+Endstop: X-max: 0 Y-max: 0 Z-min: 0
+MachineStatus: BUILDING_FROM_SD
+MoveMode: MOVING
+ok
+~M105
+CMD M105 Received.
+T0:208 /210 T1:37 /0 B:51 /50
+ok
+~M27
+CMD M27 Received.
+SD printing byte 1909402/8787507
+ok
+~M119
+CMD M119 Received.
+Endstop: X-max: 0 Y-max: 0 Z-min: 0
+MachineStatus: BUILDING_FROM_SD
+MoveMode: MOVING
+ok
+~M105
+CMD M105 Received.
+T0:208 /210 T1:37 /0 B:50 /50
+ok
+~M27
+CMD M27 Received.
+SD printing byte 1909738/8787507
+ok
+~M119
+CMD M119 Received.
+Endstop: X-max: 0 Y-max: 0 Z-min: 0
+MachineStatus: BUILDING_FROM_SD
+MoveMode: MOVING
+ok
+~M105
+CMD M105 Received.
+T0:208 /210 T1:37 /0 B:51 /50
+ok
+~M27
+CMD M27 Received.
+SD printing byte 1910214/8787507
+ok
+~M119
+CMD M119 Received.
+Endstop: X-max: 0 Y-max: 0 Z-min: 0
+MachineStatus: BUILDING_FROM_SD
+MoveMode: MOVING
+ok
+~M105
+CMD M105 Received.
+T0:209 /210 T1:37 /0 B:51 /50
+ok
+~M602
+CMD M602 Received.
+Control Release.
+ok

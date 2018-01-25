@@ -1,0 +1,6 @@
+~M601 S1 - Control command
+~M115 - Machine information, firmware
+~M114 - X/Y/Z information
+~M27 - Print information
+~M119 - Machine status, movement mode, endstop information
+~M105 - Temperatures (Extruders, bed)

@@ -7,11 +7,22 @@
 import socket
 import re
 import time
+import signal
+import sys
+
 
 TCP_IP = '192.168.10.23'
 TCP_PORT = 8899
 BUFFER_SIZE = 1024
 MESSAGE = "~M601 S1\r\n"
+
+
+def signal_handler(signal, frame):
+    close_dreamer_connection(s)
+    sys.exit(0)
+
+
+signal.signal(signal.SIGINT, signal_handler)
 
 
 def get_percentage(part, whole):
@@ -78,13 +89,20 @@ def close_dreamer_connection(socket):
     s.close()
 
 
+def progressBar(value, endvalue, bar_length=20):
+    percent = float(value) / endvalue
+    arrow = '-' * int(round(percent * bar_length) - 1) + '>'
+    spaces = ' ' * (bar_length - len(arrow))
+    sys.stdout.write("\rPercent: [{0}] {1}%".format(arrow + spaces, int(round(percent * 100))))
+    sys.stdout.flush()
+
 s = start_dreamer_connection(TCP_IP, TCP_PORT)
 percentage = 0
 while percentage < 100:
     percentage = get_dreamer_progress(s)
-    print percentage
+    progressBar(percentage, 100)
     time.sleep(1)
 
 close_dreamer_connection(s)
 
-print percentage
+print "Print complete!"

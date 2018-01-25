@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
 # Written by Thomas York
-from app import app
-from app import hashing
 
 # Imports
+from app import app
+from app import hashing
 from flask import Flask
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from sqlalchemy.orm import sessionmaker
